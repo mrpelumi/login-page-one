@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid-item1, .grid-item2 {
+  height: 100dvh;
+}
+.grid-item1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form-group{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 2rem;
+  width: 26rem;
+}
+.form-group .form-header{
+  font-size: 2.1rem;
+  color: #030303;
+  text-align: center;
+}
+.form-group .form-subheader{
+  font-size: 0.9rem;
+  color: #636364;
+  text-align: center;
+}
+
+.form-group .input-group-box{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.input-group-box .input-box{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.input-box label {
+  font-size: 0.9rem;
+  color: #181818;
+  font-weight: bold;
+}
+
+.input-box input{
+  border: 2px solid #C4C4C4;
+  border-radius: 0.7rem;
+  font-size: 0.9rem;
+  padding: 0.7rem;
+  outline: #C4C4C4;
+  color: #636364;
+  box-shadow: 0 1px 2px #C4C4C4;
+}
+
+input::placeholder{
+  color: #636364;
+  opacity: 0.5;
+}
+
+.remember-password{
+  display: flex;
+  justify-content: space-between;
+}
+
+.remember-password label{
+  display: flex;
+  flex-direction: row;
+  gap: 0.4rem;
+  color: #181818;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.remember-password input{
+  accent-color: #C4C4C4;
+}
+
+.remember-password a{
+  color: #181818;
+  font-weight: 600;
+  font-size: 0.8rem;
+  text-decoration: none;
+}
+
+.button-box {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.button-box button{
+  border-radius: 0.7rem;
+  font-size: 0.9rem;
+  padding: 0.7rem;
+  box-shadow: 0 1px 2px #C4C4C4;
+  cursor: pointer;
+  transition: scale 0.2 ease-out;
+}
+
+button:hover{
+  scale: 1.05;
+}
+
+.button-box .sign-in{
+  border: none;
+  outline: none;
+  background: #EA454C;
+  color: #fff;
+}
+
+.button-box .google-sign-in{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.7rem;
+  font-weight: 600;
+  background: #fff;
+  border: 2px solid #C4C4C4;
+}
+.google-sign-in img{
+  height: 1.5rem;
+}
+.sign-up-box{
+  display: flex;
+  font-size: 0.7rem;
+  justify-content: center;
+  font-weight: 600;
+}
+.sign-up-box .sign-up{
+  text-decoration: none;
+  color: #EA454C;
+}
+.grid-item2{
+  background-image: url('bg-image.png');
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
